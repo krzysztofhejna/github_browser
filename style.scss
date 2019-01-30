@@ -1,0 +1,49 @@
+$font-main: 'Catamaran', sans-serif;
+$color-main: rgb(216, 216, 216);
+
+* {
+  font-family: $font-main;
+  background-color: $color-main;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+}
+
+.browser {
+  &__mainHeader {
+    text-shadow: 1px 1px #d8d8d8;
+  }
+
+  &__input {
+    padding: 3px 5px;
+    background-color: $color-main;
+    border: 1px solid #000;
+  }
+
+  &__entry {
+    margin-top: 1vh;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+  }
+
+  &__user {
+    text-decoration: none;
+    align-self: center;
+    margin: 0 1vw;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  &__user-picture {
+    border: 1px solid #b6b6b6;
+    border-radius: 4px;
+  }
+}
